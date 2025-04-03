@@ -1,0 +1,12 @@
+name: First
+on: workflow_dispatch
+jobs:
+    print:
+        runsruns-on: ubuntu-latest
+        steps:
+            - name: first
+                  run: echo First1
+            - name: second
+                  run: |
+                      echo Second1
+                      echo Second2
