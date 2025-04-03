@@ -2,10 +2,11 @@ name: Python_file
 on: push
 jobs:
   strat_project:
-    runs-on: [ubuntu-latest, windows-latest, macos-latest]
     strategy:
       matrix:
         python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Download code
         uses: actions/checkout@v4
