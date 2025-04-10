@@ -1,5 +1,5 @@
 name: Python_file
-on: push
+on: workflow_dispatch
 jobs:
   strat_project:
     strategy:
