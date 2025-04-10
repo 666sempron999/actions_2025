@@ -29,7 +29,7 @@ jobs:
 
      - name: Display structure of downloaded files
        run: ls -l
-       run: pwd
+      #  run: pwd
      - name: Download a single artifact
        uses: actions/download-artifact@v4
        with:
