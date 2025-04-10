@@ -33,4 +33,5 @@ jobs:
      - name: Download a single artifact
        uses: actions/download-artifact@v4
        with:
-        name: test.out
+        name: my-artifact
+        path: test.out
