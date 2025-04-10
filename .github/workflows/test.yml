@@ -26,3 +26,7 @@ jobs:
      - run: pip install -r requirements.txt
      - name: run code
        run: python mt.py
+     - name: Download a single artifact
+       uses: actions/download-artifact@v4
+       with:
+        name: test.out
